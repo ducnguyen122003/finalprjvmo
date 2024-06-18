@@ -39,4 +39,14 @@ public class UserController {
         return userService.updateUser(userId, request);
     }
 
+    @GetMapping("/login")
+    public String login() {
+        return "login";
+    }
+
+    @GetMapping("/home")
+    public String home() {
+        return "home";
+    }
+
 }
